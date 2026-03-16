@@ -1,4 +1,4 @@
-# api-grind
+# backend-bootcamp-api
 
 100 desafios de backend para dominar TypeScript, Node.js, Fastify, PostgreSQL, Redis e RabbitMQ do zero.
 
@@ -39,7 +39,7 @@ Cada desafio vive na sua própria pasta. É completamente independente. Você n�
 ## Setup base
 
 ```bash
-mkdir api-grind && cd api-grind
+mkdir backend-bootcamp-api && cd backend-bootcamp-api
 git init
 npm init -y
 npm install -D typescript ts-node @types/node
@@ -75,11 +75,11 @@ touch .gitignore PROGRESSO.md
 
 ## Níveis
 
-| Nível         | Desafios  | Foco                                              |
-|---------------|-----------|---------------------------------------------------|
-| Básico        | 01 - 25   | Sintaxe TypeScript e fundamentos do Node.js       |
-| Intermediário | 26 - 60   | Fastify, PostgreSQL, Redis, Prisma, Jest          |
-| Avançado      | 61 - 100  | RabbitMQ, CI/CD, arquitetura, produção            |
+| Nível         | Desafios | Foco                                        |
+| ------------- | -------- | ------------------------------------------- |
+| Básico        | 01 - 25  | Sintaxe TypeScript e fundamentos do Node.js |
+| Intermediário | 26 - 60  | Fastify, PostgreSQL, Redis, Prisma, Jest    |
+| Avançado      | 61 - 100 | RabbitMQ, CI/CD, arquitetura, produção      |
 
 ---
 
@@ -1447,18 +1447,18 @@ Construa um sistema completo de gerenciamento de pedidos aplicando todos os 99 d
 
 **Requisitos:**
 
-| Área | Requisito |
-|------|-----------|
-| TypeScript | Strict mode, generics, utility types, zero `any` |
-| Fastify | Plugins por módulo, schemas em todas as rotas, hooks globais |
-| PostgreSQL | Prisma com migrations, índices, transações, soft delete |
-| Redis | Cache de produtos, sessões, rate limiting distribuído |
-| RabbitMQ | Eventos de domínio: pedido criado, pagamento confirmado |
-| Jest | Unitário e integração, mocks, cobertura mínima de 75% |
-| Docker | Imagem multi-stage, compose completo, healthchecks |
-| CI/CD | GitHub Actions: lint, teste, build, deploy |
-| Observabilidade | Métricas Prometheus, logging estruturado, correlation ID |
-| Segurança | JWT, rate limiting, log de auditoria, checklist OWASP |
+| Área            | Requisito                                                    |
+| --------------- | ------------------------------------------------------------ |
+| TypeScript      | Strict mode, generics, utility types, zero `any`             |
+| Fastify         | Plugins por módulo, schemas em todas as rotas, hooks globais |
+| PostgreSQL      | Prisma com migrations, índices, transações, soft delete      |
+| Redis           | Cache de produtos, sessões, rate limiting distribuído        |
+| RabbitMQ        | Eventos de domínio: pedido criado, pagamento confirmado      |
+| Jest            | Unitário e integração, mocks, cobertura mínima de 75%        |
+| Docker          | Imagem multi-stage, compose completo, healthchecks           |
+| CI/CD           | GitHub Actions: lint, teste, build, deploy                   |
+| Observabilidade | Métricas Prometheus, logging estruturado, correlation ID     |
+| Segurança       | JWT, rate limiting, log de auditoria, checklist OWASP        |
 
 **Estrutura:**
 
@@ -1489,6 +1489,7 @@ desafios/100-projeto-final/
 ```
 
 **Concluído quando:**
+
 - [ ] API roda localmente com `make dev`
 - [ ] Todos os testes passam
 - [ ] CI/CD está verde no GitHub Actions
@@ -1511,98 +1512,98 @@ Este é o seu portfólio. Construa como se fosse para produção de verdade.
 
 Copie isso para `PROGRESSO.md` no seu repositório.
 
-| # | Desafio | Nível | Data | Feito | Nota |
-|---|---------|-------|------|-------|------|
-| 01 | Tipos primitivos e inferência | Básico | | [ ] | |
-| 02 | Interfaces e types | Básico | | [ ] | |
-| 03 | Funções tipadas | Básico | | [ ] | |
-| 04 | Enums e union types | Básico | | [ ] | |
-| 05 | Type assertions e type guards | Básico | | [ ] | |
-| 06 | Arrays e métodos funcionais | Básico | | [ ] | |
-| 07 | Spread, destructuring e rest | Básico | | [ ] | |
-| 08 | Classes | Básico | | [ ] | |
-| 09 | Promises | Básico | | [ ] | |
-| 10 | Async e await | Básico | | [ ] | |
-| 11 | Módulos | Básico | | [ ] | |
-| 12 | Tratamento de erros | Básico | | [ ] | |
-| 13 | Utility types | Básico | | [ ] | |
-| 14 | Higher-order functions | Básico | | [ ] | |
-| 15 | Manipulação de strings e números | Básico | | [ ] | |
-| 16 | Datas | Básico | | [ ] | |
-| 17 | JSON e serialização | Básico | | [ ] | |
-| 18 | Iteração e coleções | Básico | | [ ] | |
-| 19 | Generics | Básico | | [ ] | |
-| 20 | Node.js: sistema de arquivos | Básico | | [ ] | |
-| 21 | Variáveis de ambiente | Básico | | [ ] | |
-| 22 | Servidor HTTP nativo | Básico | | [ ] | |
-| 23 | Fastify: servidor básico | Básico | | [ ] | |
-| 24 | Fastify: schema e validação | Básico | | [ ] | |
-| 25 | Fastify: hooks e ciclo de vida | Básico | | [ ] | |
-| 26 | Fastify: plugins | Intermediário | | [ ] | |
-| 27 | CRUD em memória | Intermediário | | [ ] | |
-| 28 | Autenticação JWT | Intermediário | | [ ] | |
-| 29 | Rate limit e CORS | Intermediário | | [ ] | |
-| 30 | Node.js: streams | Intermediário | | [ ] | |
-| 31 | Events e EventEmitter | Intermediário | | [ ] | |
-| 32 | Worker threads | Intermediário | | [ ] | |
-| 33 | PostgreSQL: conexão e queries | Intermediário | | [ ] | |
-| 34 | PostgreSQL: transações | Intermediário | | [ ] | |
-| 35 | PostgreSQL: índices e performance | Intermediário | | [ ] | |
-| 36 | PostgreSQL: joins e agregações | Intermediário | | [ ] | |
-| 37 | Prisma: setup e schema | Intermediário | | [ ] | |
-| 38 | Prisma: CRUD | Intermediário | | [ ] | |
-| 39 | Prisma: relações avançadas | Intermediário | | [ ] | |
-| 40 | Prisma: queries avançadas e raw SQL | Intermediário | | [ ] | |
-| 41 | Jest: setup e testes unitários | Intermediário | | [ ] | |
-| 42 | Jest: mocks e spies | Intermediário | | [ ] | |
-| 43 | Jest: testes com mock do Prisma | Intermediário | | [ ] | |
-| 44 | Jest: testes de integração com Fastify | Intermediário | | [ ] | |
-| 45 | Redis: fundamentos | Intermediário | | [ ] | |
-| 46 | Redis: session store | Intermediário | | [ ] | |
-| 47 | Redis: cache com invalidação inteligente | Intermediário | | [ ] | |
-| 48 | Redis: rate limiting distribuído | Intermediário | | [ ] | |
-| 49 | Prisma: middleware e soft delete | Intermediário | | [ ] | |
-| 50 | Prisma: migrations sem downtime | Intermediário | | [ ] | |
-| 61 | RabbitMQ: fundamentos | Avançado | | [ ] | |
-| 62 | RabbitMQ: exchanges e roteamento | Avançado | | [ ] | |
-| 63 | RabbitMQ: padrões de mensageria | Avançado | | [ ] | |
-| 64 | RabbitMQ: integração com Fastify | Avançado | | [ ] | |
-| 65 | Redis: Pub/Sub | Avançado | | [ ] | |
-| 66 | Generics avançados | Avançado | | [ ] | |
-| 67 | Decorators | Avançado | | [ ] | |
-| 68 | Design patterns | Avançado | | [ ] | |
-| 69 | Arquitetura em camadas | Avançado | | [ ] | |
-| 70 | Jest: testando RabbitMQ e Redis | Avançado | | [ ] | |
-| 71 | PostgreSQL: procedures e triggers | Avançado | | [ ] | |
-| 72 | PostgreSQL: particionamento | Avançado | | [ ] | |
-| 73 | Redis: filas com BullMQ | Avançado | | [ ] | |
-| 74 | Event Sourcing | Avançado | | [ ] | |
-| 75 | CQRS | Avançado | | [ ] | |
-| 76 | Circuit breaker | Avançado | | [ ] | |
-| 77 | Retry e timeout | Avançado | | [ ] | |
-| 78 | Criptografia com Node.js nativo | Avançado | | [ ] | |
-| 79 | Docker: imagem otimizada | Avançado | | [ ] | |
-| 80 | Docker Compose: stack completa | Avançado | | [ ] | |
-| 81 | Observabilidade: logging estruturado | Avançado | | [ ] | |
-| 82 | Observabilidade: métricas com Prometheus | Avançado | | [ ] | |
-| 83 | Segurança: checklist OWASP | Avançado | | [ ] | |
-| 84 | Log de auditoria | Avançado | | [ ] | |
-| 85 | Microsserviços: três serviços independentes | Avançado | | [ ] | |
-| 86 | CI/CD: pipeline completo com GitHub Actions | Avançado | | [ ] | |
-| 87 | CI/CD: ambientes e aprovações | Avançado | | [ ] | |
-| 88 | CI/CD: versionamento semântico | Avançado | | [ ] | |
-| 89 | AWS: upload de arquivos com S3 | Avançado | | [ ] | |
-| 90 | AWS: SQS | Avançado | | [ ] | |
-| 91 | Performance: profiling e otimização | Avançado | | [ ] | |
-| 92 | Testes de carga com k6 | Avançado | | [ ] | |
-| 93 | OpenTelemetry: tracing distribuído | Avançado | | [ ] | |
-| 94 | PostgreSQL: replicação | Avançado | | [ ] | |
-| 95 | Infrastructure as Code: Terraform | Avançado | | [ ] | |
-| 96 | Graceful shutdown e zero downtime | Avançado | | [ ] | |
-| 97 | Multi-tenancy com Row Level Security | Avançado | | [ ] | |
-| 98 | CLI | Avançado | | [ ] | |
-| 99 | Segurança: API hardened para produção | Avançado | | [ ] | |
-| 100 | Projeto final: API pronta para produção | Avançado | | [ ] | |
+| #   | Desafio                                     | Nível         | Data | Feito | Nota |
+| --- | ------------------------------------------- | ------------- | ---- | ----- | ---- |
+| 01  | Tipos primitivos e inferência               | Básico        |      | [ ]   |      |
+| 02  | Interfaces e types                          | Básico        |      | [ ]   |      |
+| 03  | Funções tipadas                             | Básico        |      | [ ]   |      |
+| 04  | Enums e union types                         | Básico        |      | [ ]   |      |
+| 05  | Type assertions e type guards               | Básico        |      | [ ]   |      |
+| 06  | Arrays e métodos funcionais                 | Básico        |      | [ ]   |      |
+| 07  | Spread, destructuring e rest                | Básico        |      | [ ]   |      |
+| 08  | Classes                                     | Básico        |      | [ ]   |      |
+| 09  | Promises                                    | Básico        |      | [ ]   |      |
+| 10  | Async e await                               | Básico        |      | [ ]   |      |
+| 11  | Módulos                                     | Básico        |      | [ ]   |      |
+| 12  | Tratamento de erros                         | Básico        |      | [ ]   |      |
+| 13  | Utility types                               | Básico        |      | [ ]   |      |
+| 14  | Higher-order functions                      | Básico        |      | [ ]   |      |
+| 15  | Manipulação de strings e números            | Básico        |      | [ ]   |      |
+| 16  | Datas                                       | Básico        |      | [ ]   |      |
+| 17  | JSON e serialização                         | Básico        |      | [ ]   |      |
+| 18  | Iteração e coleções                         | Básico        |      | [ ]   |      |
+| 19  | Generics                                    | Básico        |      | [ ]   |      |
+| 20  | Node.js: sistema de arquivos                | Básico        |      | [ ]   |      |
+| 21  | Variáveis de ambiente                       | Básico        |      | [ ]   |      |
+| 22  | Servidor HTTP nativo                        | Básico        |      | [ ]   |      |
+| 23  | Fastify: servidor básico                    | Básico        |      | [ ]   |      |
+| 24  | Fastify: schema e validação                 | Básico        |      | [ ]   |      |
+| 25  | Fastify: hooks e ciclo de vida              | Básico        |      | [ ]   |      |
+| 26  | Fastify: plugins                            | Intermediário |      | [ ]   |      |
+| 27  | CRUD em memória                             | Intermediário |      | [ ]   |      |
+| 28  | Autenticação JWT                            | Intermediário |      | [ ]   |      |
+| 29  | Rate limit e CORS                           | Intermediário |      | [ ]   |      |
+| 30  | Node.js: streams                            | Intermediário |      | [ ]   |      |
+| 31  | Events e EventEmitter                       | Intermediário |      | [ ]   |      |
+| 32  | Worker threads                              | Intermediário |      | [ ]   |      |
+| 33  | PostgreSQL: conexão e queries               | Intermediário |      | [ ]   |      |
+| 34  | PostgreSQL: transações                      | Intermediário |      | [ ]   |      |
+| 35  | PostgreSQL: índices e performance           | Intermediário |      | [ ]   |      |
+| 36  | PostgreSQL: joins e agregações              | Intermediário |      | [ ]   |      |
+| 37  | Prisma: setup e schema                      | Intermediário |      | [ ]   |      |
+| 38  | Prisma: CRUD                                | Intermediário |      | [ ]   |      |
+| 39  | Prisma: relações avançadas                  | Intermediário |      | [ ]   |      |
+| 40  | Prisma: queries avançadas e raw SQL         | Intermediário |      | [ ]   |      |
+| 41  | Jest: setup e testes unitários              | Intermediário |      | [ ]   |      |
+| 42  | Jest: mocks e spies                         | Intermediário |      | [ ]   |      |
+| 43  | Jest: testes com mock do Prisma             | Intermediário |      | [ ]   |      |
+| 44  | Jest: testes de integração com Fastify      | Intermediário |      | [ ]   |      |
+| 45  | Redis: fundamentos                          | Intermediário |      | [ ]   |      |
+| 46  | Redis: session store                        | Intermediário |      | [ ]   |      |
+| 47  | Redis: cache com invalidação inteligente    | Intermediário |      | [ ]   |      |
+| 48  | Redis: rate limiting distribuído            | Intermediário |      | [ ]   |      |
+| 49  | Prisma: middleware e soft delete            | Intermediário |      | [ ]   |      |
+| 50  | Prisma: migrations sem downtime             | Intermediário |      | [ ]   |      |
+| 61  | RabbitMQ: fundamentos                       | Avançado      |      | [ ]   |      |
+| 62  | RabbitMQ: exchanges e roteamento            | Avançado      |      | [ ]   |      |
+| 63  | RabbitMQ: padrões de mensageria             | Avançado      |      | [ ]   |      |
+| 64  | RabbitMQ: integração com Fastify            | Avançado      |      | [ ]   |      |
+| 65  | Redis: Pub/Sub                              | Avançado      |      | [ ]   |      |
+| 66  | Generics avançados                          | Avançado      |      | [ ]   |      |
+| 67  | Decorators                                  | Avançado      |      | [ ]   |      |
+| 68  | Design patterns                             | Avançado      |      | [ ]   |      |
+| 69  | Arquitetura em camadas                      | Avançado      |      | [ ]   |      |
+| 70  | Jest: testando RabbitMQ e Redis             | Avançado      |      | [ ]   |      |
+| 71  | PostgreSQL: procedures e triggers           | Avançado      |      | [ ]   |      |
+| 72  | PostgreSQL: particionamento                 | Avançado      |      | [ ]   |      |
+| 73  | Redis: filas com BullMQ                     | Avançado      |      | [ ]   |      |
+| 74  | Event Sourcing                              | Avançado      |      | [ ]   |      |
+| 75  | CQRS                                        | Avançado      |      | [ ]   |      |
+| 76  | Circuit breaker                             | Avançado      |      | [ ]   |      |
+| 77  | Retry e timeout                             | Avançado      |      | [ ]   |      |
+| 78  | Criptografia com Node.js nativo             | Avançado      |      | [ ]   |      |
+| 79  | Docker: imagem otimizada                    | Avançado      |      | [ ]   |      |
+| 80  | Docker Compose: stack completa              | Avançado      |      | [ ]   |      |
+| 81  | Observabilidade: logging estruturado        | Avançado      |      | [ ]   |      |
+| 82  | Observabilidade: métricas com Prometheus    | Avançado      |      | [ ]   |      |
+| 83  | Segurança: checklist OWASP                  | Avançado      |      | [ ]   |      |
+| 84  | Log de auditoria                            | Avançado      |      | [ ]   |      |
+| 85  | Microsserviços: três serviços independentes | Avançado      |      | [ ]   |      |
+| 86  | CI/CD: pipeline completo com GitHub Actions | Avançado      |      | [ ]   |      |
+| 87  | CI/CD: ambientes e aprovações               | Avançado      |      | [ ]   |      |
+| 88  | CI/CD: versionamento semântico              | Avançado      |      | [ ]   |      |
+| 89  | AWS: upload de arquivos com S3              | Avançado      |      | [ ]   |      |
+| 90  | AWS: SQS                                    | Avançado      |      | [ ]   |      |
+| 91  | Performance: profiling e otimização         | Avançado      |      | [ ]   |      |
+| 92  | Testes de carga com k6                      | Avançado      |      | [ ]   |      |
+| 93  | OpenTelemetry: tracing distribuído          | Avançado      |      | [ ]   |      |
+| 94  | PostgreSQL: replicação                      | Avançado      |      | [ ]   |      |
+| 95  | Infrastructure as Code: Terraform           | Avançado      |      | [ ]   |      |
+| 96  | Graceful shutdown e zero downtime           | Avançado      |      | [ ]   |      |
+| 97  | Multi-tenancy com Row Level Security        | Avançado      |      | [ ]   |      |
+| 98  | CLI                                         | Avançado      |      | [ ]   |      |
+| 99  | Segurança: API hardened para produção       | Avançado      |      | [ ]   |      |
+| 100 | Projeto final: API pronta para produção     | Avançado      |      | [ ]   |      |
 
 ---
 
